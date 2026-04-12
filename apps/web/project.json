@@ -5,6 +5,11 @@
   "prefix": "app",
   "sourceRoot": "apps/web/src",
   "tags": [],
+  "generators": {
+    "@nx/angular:component": {
+      "changeDetection": "OnPush"
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular/build:application",
