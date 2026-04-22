@@ -51,6 +51,7 @@
     "postcss": "^8.4.5",
     "prettier": "~3.6.2",
     "tailwindcss": "^4.2.2",
+    "tailwindcss-animate": "^1.0.7",
     "ts-jest": "^29.4.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
@@ -59,6 +60,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@angular/cdk": "^21.2.7",
     "@angular/common": "~21.2.0",
     "@angular/compiler": "~21.2.0",
     "@angular/core": "~21.2.0",
@@ -69,10 +71,15 @@
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
+    "@ng-icons/core": "^33.2.2",
+    "@ng-icons/lucide": "^33.2.2",
     "@ngrx/signals": "^21.1.0",
     "@tailwindcss/postcss": "^4.2.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "~7.8.0"
+    "rxjs": "~7.8.0",
+    "tailwind-merge": "^3.5.0"
   },
   "engines": {
     "node": "24.14.0",
