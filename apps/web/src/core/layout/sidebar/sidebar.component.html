@@ -1,7 +1,13 @@
 <aside class="sticky h-screen top-0 flex flex-col text-g">
-  <section class="p-5 border-b border-gray-50/20">
-    <h1 class="font-accent text-2xl font-black">myCafé</h1>
-    <p class="text-orange-300 font-light">Admin panel</p>
+  <section class="flex p-5 border-b border-gray-50/20">
+    <div class="flex-1">
+      <h1 class="font-accent text-2xl font-black">myCafé</h1>
+      <p class="text-orange-300 font-light">Admin panel</p>
+    </div>
+    <button class="cursor-pointer lg:hidden block"
+            (click)="sidebarService.close()">
+      <ng-icon name="lucideXCircle" size="20" />
+    </button>
   </section>
 
   <section class="p-5">
