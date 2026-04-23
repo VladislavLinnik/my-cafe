@@ -16,8 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@mycafe/types": ["libs/shared/types/src/index.ts"],
-      "@mycafe/shared-ui": ["libs/shared/ui/src/index.ts"],
-      "@mycafe/utils": ["libs/shared/utils/src/index.ts"]
+      "@mycafe/utils": ["libs/shared/utils/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,5 +1,5 @@
 @reference "tailwindcss";
 
 :host {
-  @apply w-75 h-screen bg-taupe-900 text-gray-300;
+  @apply w-75 min-h-screen bg-taupe-900 text-gray-300;
 }

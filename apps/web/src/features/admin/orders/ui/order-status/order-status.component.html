@@ -1,0 +1,17 @@
+@switch (status()) {
+  @case (ORDER_STATUS.NEW) {
+    <p-badge value="Новый" severity="warn" />
+  }
+  @case (ORDER_STATUS.IN_PROGRESS) {
+    <p-badge value="Готовится" severity="info" />
+  }
+  @case (ORDER_STATUS.READY) {
+    <p-badge value="Готов" severity="success" />
+  }
+  @case (ORDER_STATUS.DONE) {
+    <p-badge value="Выдан" severity="secondary" />
+  }
+  @default {
+    <p-badge value="Неизвестный статус" severity="contrast" />
+  }
+}

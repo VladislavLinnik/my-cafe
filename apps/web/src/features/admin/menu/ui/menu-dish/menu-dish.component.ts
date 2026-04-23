@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ZardSwitchComponent } from '@/shared/components/switch';
+import { ToggleSwitch } from 'primeng/toggleswitch';
 
 @Component({
   selector: 'app-menu-dish',
-  imports: [ZardSwitchComponent],
+  imports: [ToggleSwitch],
   templateUrl: './menu-dish.component.html',
   styleUrl: './menu-dish.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

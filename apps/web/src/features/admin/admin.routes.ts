@@ -8,7 +8,7 @@ export const adminRoutes: Route[] = [
     children: [
       {
         path: 'orders',
-        loadComponent: () => import('./orders/orders.component').then(m => m.OrdersComponent),
+        loadComponent: () => import('./orders/containers/orders-page.component').then(m => m.OrdersPageComponent),
       },
       {
         path: 'menu',

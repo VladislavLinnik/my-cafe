@@ -1,0 +1,24 @@
+<app-section-header>
+  <span section-title>Заказы</span>
+  <div section-actions>
+    <button class="btn">+ Добавить заказ</button>
+  </div>
+</app-section-header>
+
+<div class="p-5 flex">
+  <ul class="mr-10 w-full flex flex-col gap-y-3">
+    <li>
+      <app-order-item [status]="ORDER_STATUS.NEW" />
+    </li>
+    <li>
+      <app-order-item [status]="ORDER_STATUS.IN_PROGRESS" />
+    </li>
+    <li>
+      <app-order-item [status]="ORDER_STATUS.READY" />
+    </li>
+    <li>
+      <app-order-item [status]="ORDER_STATUS.DONE" />
+    </li>
+  </ul>
+  <app-order-details />
+</div>
