@@ -13,13 +13,13 @@
   <section class="p-5">
     <div class="mb-7">
       <p class="font-light text-gray-50/50">Управление</p>
-      <a routerLink="orders"
+      <a [routerLink]="ROUTE_TOKENS.ORDERS"
          routerLinkActive="bg-olive-500/50 text-amber-500"
          class="mb-1 flex p-2 hover:bg-olive-500/50 hover:text-white rounded-xl cursor-pointer">Заказы</a>
-      <a routerLink="menu"
+      <a [routerLink]="ROUTE_TOKENS.MENU"
          routerLinkActive="bg-olive-500/50 text-amber-500"
          class="flex mb-1 p-2 hover:bg-olive-500/50 hover:text-white rounded-xl cursor-pointer">Меню</a>
-      <a routerLink="dashboard"
+      <a [routerLink]="ROUTE_TOKENS.DASHBOARD"
         routerLinkActive="bg-olive-500/50 text-amber-500"
         class="flex mb-1 p-2 hover:bg-olive-500/50 hover:text-white rounded-xl cursor-pointer">Дашборд</a>
     </div>

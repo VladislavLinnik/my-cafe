@@ -1,0 +1,15 @@
+<h3 class="mb-4 font-accent text-xl">Активные заказы</h3>
+<ul class="mr-10 w-full flex flex-col gap-y-3">
+  <li>
+    <app-order-item [status]="ORDER_STATUS.NEW" />
+  </li>
+  <li>
+    <app-order-item [status]="ORDER_STATUS.IN_PROGRESS" />
+  </li>
+  <li>
+    <app-order-item [status]="ORDER_STATUS.READY" />
+  </li>
+  <li>
+    <app-order-item [status]="ORDER_STATUS.DONE" />
+  </li>
+</ul>

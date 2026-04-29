@@ -1,0 +1,16 @@
+<div class="p-5 rounded-xl shadow bg-white h-full">
+  <h3 class="mb-2 text-gray-400">{{ statistic().label }}</h3>
+  <p class="mb-2 font-accent text-3xl">{{ statistic().value }}
+    @if(statistic().unit) {
+      <span>{{ statistic().unit }}</span>
+    }
+  </p>
+  @if(statistic().trend) {
+    <p class="text-sm"
+       [class.text-green-600]="statistic()?.trend?.direction === DASHBOARD_STATISTIC_DIRECTION.UP"
+       [class.text-red-600]="statistic()?.trend?.direction === DASHBOARD_STATISTIC_DIRECTION.DOWN"
+       [class.text-neutral-600]="statistic()?.trend?.direction === DASHBOARD_STATISTIC_DIRECTION.NEUTRAL">
+      {{ statistic().trend?.value }} {{ statistic().trend?.label }}
+    </p>
+  }
+</div>

@@ -13,6 +13,7 @@ import { filter } from 'rxjs';
 import { SidebarService } from '../../services/sidebar.service';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideXCircle } from '@ng-icons/lucide';
+import { ROUTE_TOKENS } from '../../../domains/admin/admin.routes';
 
 @Component({
   selector: 'app-sidebar',
@@ -27,6 +28,7 @@ import { lucideXCircle } from '@ng-icons/lucide';
 })
 export class SidebarComponent {
   readonly sidebarService = inject(SidebarService);
+  readonly ROUTE_TOKENS = ROUTE_TOKENS;
 
   constructor() {
     const router = inject(Router);

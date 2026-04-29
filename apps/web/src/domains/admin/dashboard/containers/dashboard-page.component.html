@@ -1,0 +1,23 @@
+<app-section-header>
+  <span section-title>Дашборд</span>
+  <div section-actions>
+    <p-date-picker [(ngModel)]="date" [showIcon]="true" dateFormat="dd.mm.yy" />
+  </div>
+</app-section-header>
+
+<div class="p-5">
+  <div class="mb-4 w-full grid grid-cols-4 gap-5">
+    @for (statistic of statistics(); track $index) {
+      <app-statistic-card [statistic]="statistic" />
+    }
+  </div>
+
+  <div class="w-full grid grid-cols-6 gap-x-5">
+    <div class="col-span-4">
+      <app-active-orders />
+    </div>
+    <div class="col-span-2">
+      <app-trending-dishes />
+    </div>
+  </div>
+</div>

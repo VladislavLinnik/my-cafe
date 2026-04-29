@@ -4,11 +4,11 @@ export const appRoutes: Route[] = [
   {
     path: 'admin',
     loadChildren: () =>
-      import('../features/admin/admin.routes').then((r) => r.adminRoutes),
+      import('../domains/admin/admin.routes').then((r) => r.adminRoutes),
   },
   {
     path: 'menu',
-    loadChildren: () => import('../features/public-menu/public-menu.routes').then(r => r.publicMenuRoutes),
+    loadChildren: () => import('../domains/public-menu/public-menu.routes').then(r => r.publicMenuRoutes),
   },
   {
     path: '',

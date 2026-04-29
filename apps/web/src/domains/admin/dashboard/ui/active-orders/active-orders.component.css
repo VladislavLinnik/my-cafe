@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+:host {
+  @apply p-5 block rounded-xl shadow bg-white h-full;
+}
